@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start src/ts/karma.conf.js",
+    "testjs": "karma start src/js/karma.conf.js",
     "tsc": "tsc src/ts/index.ts",
     "watch": "watchify src/ts/index.ts -p [ tsify ] -o build/bundle.js --debug"
   },
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/angular": "^1.6.32",
     "@types/jasmine": "^2.6.0",
+    "angular-mocks": "^1.6.6",
     "jasmine": "^2.8.0",
     "jasmine-core": "^2.8.0",
     "karma": "^1.7.1",
