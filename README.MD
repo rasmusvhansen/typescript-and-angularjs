@@ -7,6 +7,6 @@ To be able to run code, run
 1. npm install
 2. npm run watch
 
-To run TypeScript tests you can just run `npm test`
+To run TypeScript tests you can run `npm test`
 
-To run JavaScript tests you can just run `npm run jstest`
+To run JavaScript tests you can run `npm run jstest`
