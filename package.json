@@ -1,0 +1,31 @@
+{
+  "name": "typescript-and-angularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc src/ts/index.ts",
+    "watch": "watchify src/ts/index.ts -p [ tsify ] -o build/bundle.js --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasmusvhansen/typescript-and-angularjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasmusvhansen/typescript-and-angularjs/issues"
+  },
+  "homepage":
+    "https://github.com/rasmusvhansen/typescript-and-angularjs#readme",
+  "devDependencies": {
+    "@types/angular": "^1.6.32",
+    "tsify": "^3.0.3",
+    "typescript": "^2.5.2",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}
