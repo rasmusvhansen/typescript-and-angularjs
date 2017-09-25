@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "lib": ["es2017", "dom"]
+  },
+  "exclude": ["node_modules"],
+  "files": ["src/ts/index.ts"]
+}

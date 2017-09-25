@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "karma start src/ts/karma.conf.js",
     "tsc": "tsc src/ts/index.ts",
     "watch": "watchify src/ts/index.ts -p [ tsify ] -o build/bundle.js --debug"
   },
@@ -17,10 +17,16 @@
   "bugs": {
     "url": "https://github.com/rasmusvhansen/typescript-and-angularjs/issues"
   },
-  "homepage":
-    "https://github.com/rasmusvhansen/typescript-and-angularjs#readme",
+  "homepage": "https://github.com/rasmusvhansen/typescript-and-angularjs#readme",
   "devDependencies": {
     "@types/angular": "^1.6.32",
+    "@types/jasmine": "^2.6.0",
+    "jasmine": "^2.8.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-typescript": "^3.0.6",
     "tsify": "^3.0.3",
     "typescript": "^2.5.2",
     "watchify": "^3.9.0"

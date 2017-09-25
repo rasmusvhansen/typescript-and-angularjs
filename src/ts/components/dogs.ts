@@ -2,10 +2,12 @@ import { IDog } from "./../model/IDog";
 import { DogService } from "./../services/DogService";
 import { IComponentOptions } from "angular";
 
-class DogsController {
+export class DogsController {
   dogs: IDog[];
-  constructor(private dogService: DogService) {
-    this.dogService.getDogs().then(dogs => (this.dogs = dogs));
+  constructor(private dogService: DogService) {}
+
+  $onInit() {
+    return this.dogService.getDogs().then(dogs => (this.dogs = dogs));
   }
 }
 
@@ -20,7 +22,7 @@ export const dogs: IComponentOptions = {
       <ul ng-if="dog.subBreeds.length">
         <li ng-repeat="subBreed in dog.subBreeds">{{subBreed}}</li>
       </ul>
-    </li>
+    </li> 
   </ul>  
   </div>`
 };
