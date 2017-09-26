@@ -59,4 +59,6 @@ typings/
 
 src/ts/**/*.js
 
+!src/ts/karma.conf.js
+
 build/bundle.js
