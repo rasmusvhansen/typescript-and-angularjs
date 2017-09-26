@@ -2,7 +2,7 @@
 
 This is a repository with code for my talk at ngAarhus on September 28th 2017.
 
-To be able to run code, run
+To be able to run ts code, run
 
 1. npm install
 2. npm run watch
