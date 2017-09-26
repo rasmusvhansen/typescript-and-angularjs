@@ -19,7 +19,7 @@ export class DogService {
     return this.$http
       .get<IApiResponse>('https://dog.ceo/api/breeds/list/all')
       .then(res => {
-        const data: any = res.data.message;
+        const data = res.data.message;
         return Object.keys(data).map(k => ({ breed: k, subBreeds: data[k] }));
       });
   }

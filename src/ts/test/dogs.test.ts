@@ -22,4 +22,11 @@ describe('dogs', () => {
       });
     });
   });
+
+  describe('selectDog', () => {
+    it('should select the dog', () => {
+      ctrl.selectDog({ breed: 'Doggo' });
+      expect(ctrl.selectedDog.breed).toBe('Doggo');
+    });
+  });
 });

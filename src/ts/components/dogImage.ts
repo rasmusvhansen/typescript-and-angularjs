@@ -1,6 +1,6 @@
-import { IDog } from "./../model/IDog";
-import { DogService } from "./../services/DogService";
-import { IComponentOptions } from "angular";
+import { IDog } from './../model/IDog';
+import { DogService } from './../services/DogService';
+import { IComponentOptions } from 'angular';
 
 class DogImageController {
   breed: string;
@@ -17,7 +17,7 @@ class DogImageController {
 
 export const dogImage: IComponentOptions = {
   bindings: {
-    breed: "<"
+    breed: '<'
   },
   controller: DogImageController,
   template: `<img ng-src="{{$ctrl.dogImage}}" class="pull-right">`

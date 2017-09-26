@@ -1,4 +1,4 @@
 (function() {
-  "use strict";
-  angular.module("ngAarhus", []);
+  'use strict';
+  angular.module('ngAarhus', []);
 })();
