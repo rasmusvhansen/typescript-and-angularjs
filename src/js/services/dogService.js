@@ -17,7 +17,7 @@
 
     this.getDogUrl = function(breed) {
       return $http
-        .get(`https://dog.ceo/api/breed/${breed}/images/random`)
+        .get('https://dog.ceo/api/breed/' + breed + '/images/random')
         .then(function(res) {
           return res.data.message;
         });

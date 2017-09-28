@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Introduction To Working With SitaWareWeb Client Code</title>
+  <meta charset="utf-8">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+    body {
+      font-family: 'Droid Serif';
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Yanone Kaffeesatz';
+      font-weight: normal;
+    }
+
+    .inverse {
+      background: #272822;
+      color: #777872;
+      text-shadow: 0 0 20px #333;
+    }
+
+    .inverse h1,
+    .inverse h2,
+    .inverse h3,
+    .inverse a {
+      color: #f3f3f3;
+    }
+
+    a {
+      color: #7e7e7e;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .remark-code,
+    .remark-inline-code {
+      font-family: 'Ubuntu Mono';
+    }
+
+    .remark-slide-content {
+      background-size: contain;
+    }
+
+    .footnotes {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      margin: 10px;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+
+<body>
+  <textarea id="source">
+
+name: default
+layout: true
+---
+
+class: center, inverse
+background-image: url(https://unsplash.it/1600/1200?image=911)
+
+# TypeScript and AngularJS
+### by Rasmus Vestergaard Hansen [Systematic]
+
+---
+
+# Why?
+Large AngularJS applications written in ES5 can be:
+
+* Very unweildy and hard to maintain for a large team
+* Scary to refactor due to no type safety and global dependency injection container
+* Difficult to test in isolation
+* Tied (too) closely to AngularJS
+
+???
+I would argue that using TypeScript can help solve or alleviate these issues.
+
+---
+class: center, middle, inverse
+background-image: url(https://unsplash.it/1600/1200?image=769)
+# Let's code it!
+
+---
+
+# Application
+
+### [Dog Image App](src/js/index-js.html)
+
+* One service: DogService
+* Two components: 
+	* dogs
+	* dogImage
+
+
+---
+# TypeScript and AngularJS
+## Pros
+* Helps with maintainability and refactoring
+* Helps with separation of concerns
+* Catches (some) bugs on compile time instead of run time
+* Makes it easier to switch frameworks
+* Makes tests faster
+
+## Cons
+* Longer turnaround time due to compile cycle
+* More complex build environment (compiling, testing, source maps, etc.)
+
+---
+
+class: center, middle, inverse
+background-image: url(https://unsplash.it/1600/1200?image=681)
+# Q&A
+
+    </textarea>
+  <script src="remark.js">
+
+  </script>
+  <script>
+    var slideshow = remark.create();
+  </script>
+</body>
+
+</html>

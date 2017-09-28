@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>ngAarhus Typescript and AngularJS</title>
   <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif
+    }
+
     .pull-right {
       float: right;
     }
@@ -12,10 +16,40 @@
     img {
       max-width: 450px;
     }
+
+    a {
+      text-decoration: none
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1,
+    h2,
+    body {
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+      text-transform: uppercase;
+      text-rendering: optimizeLegibility;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
   </style>
 </head>
 
 <body ng-app="ngAarhus">
+  <h1 class="elegantshadow">ngAarhus - TypeScript and AngularJS</h1>
   <dogs></dogs>
   <script src="bundle.js"></script>
 </body>

@@ -1,5 +1,5 @@
 (function() {
-  "use strict";
+  'use strict';
 
   function DogImageController(dogService) {
     var ctrl = this;
@@ -12,9 +12,9 @@
     };
   }
 
-  angular.module("ngAarhus").component("dogImage", {
+  angular.module('ngAarhus').component('dogImage', {
     bindings: {
-      breed: "<"
+      breed: '<'
     },
     controller: DogImageController,
     template: `<img ng-src="{{$ctrl.dogImage}}" class="pull-right">`
