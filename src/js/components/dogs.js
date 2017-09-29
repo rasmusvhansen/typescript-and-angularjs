@@ -1,6 +1,7 @@
 (function() {
   'use strict';
-  function DogsController(dogService) {
+  function DogsController(dogService /*otherDep*/) {
+    //otherDep.initialize();
     var ctrl = this;
 
     ctrl.$onInit = function() {
@@ -17,6 +18,13 @@
   angular
     .module('ngAarhus')
     .controller('DogsController', DogsController)
+    .service('otherDep', function() {
+      this.initialize = function() {
+        for (var i = 0; i < 1000; i++) {
+          console.log('doing expensive stuff' + i);
+        }
+      };
+    })
     .component('dogs', {
       controller: DogsController,
       template:
