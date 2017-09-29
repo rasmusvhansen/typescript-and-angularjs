@@ -10,3 +10,7 @@ To be able to run ts code, run
 To run TypeScript tests you can run `npm test`
 
 To run JavaScript tests you can run `npm run jstest`
+
+To see the js version, open `src/js/index-js.html`
+
+To see the TypeScript version, open `build/index.html` after running `npm run watch`
